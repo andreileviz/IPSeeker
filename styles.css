@@ -54,3 +54,15 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 20px;
+    }
+
+    .logo img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
