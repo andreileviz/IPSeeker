@@ -24,22 +24,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conn->connect_error) {
         die("Falha na conexão com o banco de dados: " . $conn->connect_error);
     } else {
-        echo 'conectado ao banco de dados';
+        header("Location: bancodedados.html");
     }
 
-    $sql = "SHOW TABLES";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-        echo $row["Tables_in_$banco"]. "<br>";
-    }
-    } else {
-        echo "Nenhuma tabela encontrada.";
-    }
-
-    // Fechar a conexão com o banco de dados
-    $conn->close();
+    //$sql = "SHOW TABLES";
+    //$result = $conn->query($sql);
+//
+    //if ($result->num_rows > 0) {
+    //    while($row = $result->fetch_assoc()) {
+    //    echo $row["Tables_in_$banco"]. "<br>";
+    //}
+    //} else {
+    //    echo "Nenhuma tabela encontrada.";
+    //}
+//
+    //// Fechar a conexão com o banco de dados
+    //$conn->close();
     }
 ?>
 
