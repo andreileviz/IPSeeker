@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>IPSeeker</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="images/Bzy4eWqiJkN9-removebg-preview.png" alt="IPSeeker Logo">
+            <h1>IPSeeker</h1>
+        </div>
+
+        <form action="processa_formulario.php" method="post">
+            <label for="ip">IP:</label>
+            <input type="text" id="ip" name="ip" required>
+
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required step="1">
+
+            <label for="port">Porta (opcional):</label>
+            <input type="text" id="port" name="port">
+
+            <button type="submit" value="Buscar">Buscar</button>
+        </form>
+
+
+    </div>
+</body>
+</html>
